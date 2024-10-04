@@ -15,7 +15,10 @@ const Sidebar = () => {
   return (
     <aside className="bg-white shadow-md w-20 h-screen fixed top-0 left-0 overflow-y-auto flex flex-col">
       <nav className="pl-2">
-        <ul className="space-y-1">
+        <div className="flex flex-col justify-start pt-8 items-center h-1/2">
+          Profile
+        </div>
+        <ul className="space-y-1 flex flex-col justify-center items-center">
           <li>
             <SidebarItem
               linkTo="/data"
