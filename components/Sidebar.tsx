@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import SidebarItem from "./SidebarItem";
 import { HardDrive, Waypoints, Icon, Library } from "lucide-react";
 import { hexagons3 } from "@lucide/lab";
 
 // not a reusable component
 const Sidebar = () => {
-  const [activeItemId, setActiveItemId] = useState(null);
+  const [activeItemId, setActiveItemId] = React.useState<number>(0);
 
-  const handleItemClick = (itemId) => {
+  const handleItemClick = (itemId: number) => {
     setActiveItemId(itemId);
   };
   return (
