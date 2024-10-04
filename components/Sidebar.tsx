@@ -18,6 +18,7 @@ const Sidebar = () => {
         <ul className="space-y-1">
           <li>
             <SidebarItem
+              linkTo="/data"
               icon={<HardDrive size={32} absoluteStrokeWidth={true} />}
               isActive={activeItemId === 1}
               onClick={() => handleItemClick(1)}
@@ -25,6 +26,7 @@ const Sidebar = () => {
           </li>
           <li>
             <SidebarItem
+              linkTo="/#registry"
               icon={<Library size={32} absoluteStrokeWidth={true} />}
               isActive={activeItemId === 2}
               onClick={() => handleItemClick(2)}
@@ -32,6 +34,7 @@ const Sidebar = () => {
           </li>
           <li>
             <SidebarItem
+              linkTo="/#workflows"
               icon={<Waypoints size={32} absoluteStrokeWidth={true} />}
               isActive={activeItemId === 3}
               onClick={() => handleItemClick(3)}
@@ -39,6 +42,7 @@ const Sidebar = () => {
           </li>
           <li>
             <SidebarItem
+              linkTo="/#pods"
               icon={
                 <Icon
                   iconNode={hexagons3}
