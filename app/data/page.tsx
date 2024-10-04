@@ -1,7 +1,7 @@
 const Data = () => {
   return (
-    <div>
-      <header className="flex pl-24 mt-8 text-2xl w-full">Data</header>
+    <div className="pl-24 mt-8 w-full">
+      <header className="text-2xl">Data</header>
     </div>
   );
 };
