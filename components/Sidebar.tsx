@@ -4,6 +4,7 @@ import React from "react";
 import SidebarItem from "./SidebarItem";
 import { HardDrive, Waypoints, Icon, Library } from "lucide-react";
 import { hexagons3 } from "@lucide/lab";
+// import { SidebarItemsData } from "@/utils/SidebarItemsData";
 
 // not a reusable component
 const Sidebar = () => {
@@ -57,6 +58,19 @@ const Sidebar = () => {
               onClick={() => handleItemClick(4)}
             />
           </li>
+          {/* {SidebarItemsData.map(({ id, linkTo, icon }) => {
+            return (
+              <li key={id}>
+                <SidebarItem
+                  linkTo={linkTo}
+                  icon={icon}
+                  isActive={activeItemId === id}
+                  onClick={handleItemClick(id)}
+                />
+              </li>
+            ); //I need to think a way to add the ReactComponent as an item here
+            //rather than using it just like a string.
+          })} */}
         </ul>
       </nav>
     </aside>
